@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package fullcycle_package;
+
+service GrpcService {
+  rpc Find (FindRequest) returns (FindResponse) {}
+}
+
+message FindRequest{
+
+}
+
+message FindResponse {
+  string name = 1;
+}

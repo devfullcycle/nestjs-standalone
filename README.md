@@ -1,0 +1,1 @@
+evans --proto src/grpc-server/grpc.proto --package fullcycle_package repl

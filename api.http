@@ -1,0 +1,9 @@
+GET http://localhost:3000/products
+
+###
+POST http://localhost:3000/products/create-job
+Content-Type: application/json
+
+{
+  "name": "live de nest"
+}
