@@ -15,8 +15,8 @@ import { ProductsModule } from './products/products.module';
         port: 6379,
       },
     }),
-    MyRabbitmqModule, //conectar rabbit
-    ProductsModule.register(),
+    MyRabbitmqModule, //register handlers = false
+    ProductsModule.register({ enableQueueConsumers: true }),
   ],
 })
-export class AppModule {}
+export class QueueWorkerModule {}
